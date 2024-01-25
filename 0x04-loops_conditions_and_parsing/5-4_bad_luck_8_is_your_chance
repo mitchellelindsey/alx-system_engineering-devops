@@ -1,24 +1,18 @@
 #!/usr/bin/env bash
+# Print bad luck at specifi index.
 
-# Bash script to loop from 1 to 10 and display messages based on iteration
+i=1
 
-# Initialize a counter
-counter=1
-
-# While loop to iterate from 1 to 10
-while [ $counter -le 10 ]; do
-    # Check conditions for different iterations
-    if [ $counter -eq 4 ]; then
-        # Display "bad luck" for the 4th iteration
+while [ $i -le 10 ]
+do
+    if [ $i -eq 4 ]
+    then
         echo "bad luck"
-    elif [ $counter -eq 8 ]; then
-        # Display "good luck" for the 8th iteration
+    elif [ $i -eq 8 ]
+    then
         echo "good luck"
     else
-        # Display "Best School" for other iterations
         echo "Best School"
     fi
-
-    # Increment the counter
-    ((counter++))
+    ((i++))
 done
